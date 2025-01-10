@@ -17,18 +17,18 @@ import React, { useEffect } from 'react';
         // Apply initial theme based on system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         if (prefersDark) {
-          document.body.classList.add('dark');
+          document.documentElement.classList.add('dark');
         } else {
-          document.body.classList.remove('dark');
+          document.documentElement.classList.remove('dark');
         }
 
         // Listen for changes in system theme preference
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
         const handleChange = () => {
           if (mediaQuery.matches) {
-            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
           } else {
-            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
           }
         };
 
