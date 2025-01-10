@@ -30,49 +30,49 @@ import React from 'react';
               </Link>
             */
     
-              <nav className="bg-white shadow-lg">
+              <nav className="bg-white shadow-lg dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <Dumbbell className="h-8 w-8 text-indigo-600" />
-            <span className="text-xl font-bold text-gray-800">Workout Tracker</span>
+            <span className="text-xl font-bold text-gray-800 dark:text-white">Workout Tracker</span>
           </Link>
     
     
               <div className="flex items-center space-x-4">
                 <Link
                   to="/wod"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   WOD
                 </Link>
                 <Link
                   to="/workouts"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   <Dumbbell className="h-5 w-5" />
                 </Link>            
                 <Link
                   to="/leaderboard"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   <Trophy className="h-5 w-5" />
                 </Link>
                 <Link
                   to="/profile"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   <User className="h-5 w-5" />
                 </Link>
                 <Link
                   to="/settings"
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   <Settings className="h-5 w-5" />
                 </Link>
                 <button
                   onClick={handleSignOut}
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium dark:text-gray-300 dark:hover:text-indigo-400"
                 >
                   <LogOut className="h-5 w-5" />
                 </button>
