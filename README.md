@@ -1,1 +1,2 @@
-# rb6-2
+# WorkoutApp-Bolt
+Repository created by Bolt to GitHub extension
