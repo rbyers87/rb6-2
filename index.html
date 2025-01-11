@@ -35,9 +35,11 @@
     
     <script>
       // Automatically add 'dark' class if the user prefers dark mode
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.documentElement.classList.add('dark');
+} else {
+  document.documentElement.classList.remove('dark');
+}
     </script>
   </head>
   <body class="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText">
