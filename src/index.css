@@ -1,19 +1,28 @@
 /* Tailwind CSS Directives */
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    /* Media queries for container padding */
-    @media (max-width: 768px) {
-      .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-    }
+/* Dark mode background fix for Safari PWA */
+html, body {
+  background-color: #ffffff;
+}
 
-    @media (max-width: 640px) {
-      .container {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-    }
+html.dark, body.dark {
+  background-color: #121212;
+}
+
+/* Media queries for container padding */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
