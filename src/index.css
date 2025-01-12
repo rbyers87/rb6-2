@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: light dark;
+}
+
 /* Dark mode fix for Safari PWA */
 html, body {
   background-color: #ffffff;
