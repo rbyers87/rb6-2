@@ -56,9 +56,9 @@ export default function Dashboard() {
             onChange={setSelectedDate}
           />
           <WorkoutOfTheDay workout={wodWorkout} />
- //        <RecentWorkouts />
+          <RecentWorkouts />
         </div>
-//        <PersonalRecords />
+          <PersonalRecords />
       </div>
     </div>
   );
