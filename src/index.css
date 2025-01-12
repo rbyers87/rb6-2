@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Inform iOS Safari and PWA of both light and dark modes */
 :root {
   color-scheme: light dark;
 }
@@ -11,11 +12,29 @@
 html, body {
   background-color: #ffffff;
   color: #000000;
+  min-height: 100%; /* Ensure the background covers the full viewport */
 }
 
 html.dark, body.dark {
   background-color: #121212;
   color: #ffffff;
+}
+
+/* Force background color in standalone PWA mode */
+@media (display-mode: standalone) {
+  html, body {
+    background-color: #ffffff;
+  }
+  
+  html.dark, body.dark {
+    background-color: #121212;
+  }
+}
+
+/* Ensure all containers adapt to dark mode */
+.container {
+  background-color: inherit;
+  color: inherit;
 }
 
 /* Media queries for container padding */
