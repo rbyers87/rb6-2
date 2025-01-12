@@ -38,8 +38,8 @@ import { json } from 'node:process';
         ],
         start_url: "/",
         display: "standalone",
-        theme_color: "#ffffff",
-        background_color: "#FFFFFF"
+        theme_color: "#000000",
+        background_color: "#000000"
       }), {
         headers: {
           'Content-Type': 'application/json'
