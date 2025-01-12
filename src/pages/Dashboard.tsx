@@ -3,8 +3,8 @@ import { supabase } from '../lib/supabase';
 import { format } from 'date-fns';
 import { DateSelector } from '../components/dashboard/DateSelector';
 import { WorkoutOfTheDay } from '../components/dashboard/WorkoutOfTheDay';
-import { RecentWorkouts } from '../components/dashboard/RecentWorkouts';
-import { PersonalRecords } from '../components/dashboard/PersonalRecords';
+//import { RecentWorkouts } from '../components/dashboard/RecentWorkouts';
+//import { PersonalRecords } from '../components/dashboard/PersonalRecords';
 import { LoadingSpinner } from '../components/common/LoadingSpinner';
 import type { Workout } from '../types/workout';
 
@@ -56,9 +56,9 @@ export default function Dashboard() {
             onChange={setSelectedDate}
           />
           <WorkoutOfTheDay workout={wodWorkout} />
-          <RecentWorkouts />
+ //         <RecentWorkouts />
         </div>
-        <PersonalRecords />
+//        <PersonalRecords />
       </div>
     </div>
   );
